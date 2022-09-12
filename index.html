@@ -53,9 +53,8 @@
         <section class="conteiner-general section">
             <div class="container">
                 <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="button-index" type="button">Замовити послугу</button>
+                <button class="button-index" type="button" data-modal-open>Замовити послугу</button>
             </div>
-            <div class="bac"></div>
         </section>
             <section class="conteiner-goals section">
                 <div class="container">
@@ -104,15 +103,17 @@
                 <div class="container">
                     <h2 class="pageteams">Чим ми займаємося</h2>
                         <ul class="page-flex">
-                            <li class="text-page-studio">
-                                <img src="images/Page1.jpg" alt="Зображення WebStudio" width="370" height="294">
-                                <h2 class="gg">Десктопні додатки</h2>
+                            <li class="bottom-background-image">
+                                    <img src="./images/Page1.jpg" alt="Зображення WebStudio" height="294" width="370">
+                                    <h2 class="text-page-studio">ДЕСКТОПНІ ДОДАТКИ</h2>
                             </li>
-                            <li>
-                                <img src="images/Page2.jpg" alt="Зображення WebStudio" width="370" height="294">
+                            <li class="bottom-background-image">
+                                    <img src="./images/Page2.jpg" alt="Зображення WebStudio" height="294" width="370">
+                                    <h2 class="text-page-studio">МОБІЛЬНІ ДОДАТКИ</h2>
                             </li>
-                            <li>
-                                <img src="images/Page3.jpg" alt="Зображення WebStudio" width="370" height="294">
+                            <li class="bottom-background-image">
+                                    <img src="./images/Page3.jpg" alt="Зображення WebStudio" height="294" width="370">
+                                    <h2 class="text-page-studio">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h2>
                             </li>
                         </ul>
                 </div>                    
@@ -351,5 +352,17 @@
         </div>
     </div>    
     </footer>
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button class="modal-button" type="button" data-modal-close>
+                <svg class="icon-close">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js">
+
+    </script>
 </body>
 </html>

@@ -501,6 +501,29 @@ margin-bottom: 0;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
+.pop-up-window{
+    position: relative;
+    max-height: 294px;
+    max-width: 100%;
+}
+.text-pop-up-window{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    height: 0;
+    font-weight: 400;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: height var(--anim);
+}
+.pop-up-window:hover .text-pop-up-window{
+    height: 100%;
+}
 /* Modal */
 .backdrop{
     position: fixed;
@@ -509,9 +532,9 @@ margin-bottom: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    pointer-events: none;
-    visibility: initial;
+    opacity: 1;
+    pointer-events: initial;
+    visibility: visible;
     transition: opacity var(--anim), visibility var(--anim);
 }
 .icon-close{
@@ -545,7 +568,7 @@ margin-bottom: 0;
     border-radius: 4px;
 }
 .backdrop.is-hidden{
-    opacity: 1;
-    pointer-events: initial;
-    visibility: visible;
+    opacity: 0;
+    pointer-events: none;
+    visibility: initial;
 }
